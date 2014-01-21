@@ -38,6 +38,16 @@ The Java library generates correct output, while the Scala library not.
 
 Just run `scala main.scala`.
 
+## How to solve the problem
+
+Well, there seems to be no good library in Scala to read binary files. However, there's a way to make the example above work by setting encoding of the file to `ISO-8859-1` as follows:
+
+``` Scala
+val ss = Source.fromFile("data.bin", "ISO-8859-1")
+```
+
+It looks strange to set encoding for reading binary files, but [scala.io.Source](http://www.scala-lang.org/api/current/index.html#scala.io.Source) is designed for text files. It's a pity that Scala doesn't provide a convenient library for reading binary files.
+
 ## Tips
 
 You can use `hexdump data.bin` or `xxd data.bin` to view the contents of `data.bin`.
