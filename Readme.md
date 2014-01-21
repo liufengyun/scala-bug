@@ -1,6 +1,6 @@
 # Scala-Bug
 
-This program demonstrates a bug of Scala standard library [Source](http://www.scala-lang.org/api/current/index.html#scala.io.Source) in reading binary files.
+This program demonstrates a bug of Scala standard library [scala.io.Source](http://www.scala-lang.org/api/current/index.html#scala.io.Source) in reading binary files.
 
 ## Description
 
